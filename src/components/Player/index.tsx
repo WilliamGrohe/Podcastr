@@ -94,7 +94,7 @@ export function Player() {
                     <button type="button" disabled={!episode}>
                         <img src="/shuffle.svg" alt="Embaralhar"/>
                     </button>
-                    <button type="button" disabled={!episode}>
+                    <button type="button" disabled={!episode} onClick={playPrevious}>
                         <img src="/play-previous.svg" alt="Tocar anterior"/>
                     </button>
 
