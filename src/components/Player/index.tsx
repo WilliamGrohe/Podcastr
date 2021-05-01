@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import { useContext } from 'react';
+import Slider from 'rc-slider';
+
+import 'rc-slider/assets/index.css'
 
 import { PlayerContext } from '../../contexts/playerContext';
 
