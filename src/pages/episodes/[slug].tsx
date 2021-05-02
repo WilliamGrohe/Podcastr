@@ -3,13 +3,15 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { usePlayer } from '../../contexts/playerContext';
+import Image from 'next/image';
+import Head from 'next/head';
+import React from 'react';
 
 import { api } from '../../services/api';
+import { usePlayer } from '../../contexts/playerContext';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 
 import styles from './episode.module.scss';
-import Image from 'next/image';
 
 type Episode = {
   id: string;
@@ -32,6 +34,9 @@ export default function Episode({ episode }: EpisodeProps){
 
   return (
     <div className={styles.episode}>
+      <Head>
+        <title>{episode.title} | Podcastr</title>
+      </Head>
       <div className={styles.thumbnailContainer}>
         <Link href="/">
           <button type="button">
