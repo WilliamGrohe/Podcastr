@@ -49,6 +49,19 @@ export function Player() {
         })
     }
 
+    function handleSeekControl(handleTime: number) {
+        audioRef.current.currentTime = handleTime;
+        setProgress(handleTime);
+    }
+
+    function handleEpisodeEnded() {
+        if(hasNext) {
+            playNext();
+        } else {
+            return;
+        }
+    }
+
     const episode = episodeList[currentEpisodeIndex]
 
     return(
@@ -86,6 +99,7 @@ export function Player() {
                             <Slider 
                                 max={episode.duration}
                                 value={progress}
+                                onChange={handleSeekControl}
                                 trackStyle={{ backgroundColor: '#04d361'}}
                                 railStyle={{ backgroundColor: '#9f75ff'}}
                                 handleStyle={{ borderColor: '#04d361', borderWidth: 4}}
@@ -106,6 +120,7 @@ export function Player() {
                         onPlay={() => setPlayingState(true)}
                         onPause={() => setPlayingState(false)}
                         onLoadedMetadata={setupProgressListener}
+                        onEnded={handleEpisodeEnded}
                     />
                 ) }
                 

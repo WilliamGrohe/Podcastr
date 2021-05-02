@@ -67,7 +67,8 @@ export function PlayerContextProvider({ children }: PlayerContextProviderProps) 
         setIsPlaying(state);
     }
 
-    const hasNext = (currentEpisodeIndex + 1) < episodeList.length;
+
+    const hasNext = isShuffling || (currentEpisodeIndex + 1) < episodeList.length;
     const hasPrevious = currentEpisodeIndex > 0;
 
     function playNext() {
