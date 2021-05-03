@@ -13,11 +13,11 @@
 ![Home](https://github.com/WilliamGrohe/Podcastr/blob/master/public/home.jpg?raw=trueg)
 ![Episódio](https://github.com/WilliamGrohe/Podcastr/blob/master/public/episode.jpg?raw=true)
 
-## 📖  Sobre
+## 📖 Sobre
 
 O Podcastr é uma aplicação para ouvir podcasts no navegador, desenvolvido durante a NLW#5 da Rocketseat Trilha ReactJs.
 
-## :art:  Layout
+## :art: Layout
 
 O layout da aplicação está disponível no [Figma](https://www.figma.com/) através [deste link](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761).
 
@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 -   [Sass](https://sass-lang.com/)
 -   [JSONServer](https://github.com/typicode/json-server)
 
-## 🚀  Como executar o projeto
+## 🚀 Como executar o projeto
 
 -   Clone o repositório
 
