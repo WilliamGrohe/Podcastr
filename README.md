@@ -17,7 +17,7 @@
 
 O Podcastr é uma aplicação para ouvir podcasts no navegador, desenvolvido durante a NLW#5 da Rocketseat Trilha ReactJs.
 
-## 🎨  Layout
+## :art:  Layout
 
 O layout da aplicação está disponível no [Figma](https://www.figma.com/) através [deste link](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761).
 
