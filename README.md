@@ -59,5 +59,5 @@ yarn dev
 -   Acesse no seu navegador
 
 ```
-http://localhost:30
+http://localhost:3000
 ```
